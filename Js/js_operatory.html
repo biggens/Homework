@@ -50,50 +50,173 @@
       a /= 2; // a = a / 2
       console.log(a); // 4*/
 
-    // Строковые операции
-    /*let a = 'машина';
-    console.log('кофе' + a); // кофемашина
-    a = 'перекати';
-    a += 'поле'; // a = a + 'поле'
-    console.log(a); // перекатиполе*/
+      // Строковые операции
+      /*let a = 'машина';
+      console.log('кофе' + a); // кофемашина
+      a = 'перекати';
+      a += 'поле'; // a = a + 'поле'
+      console.log(a); // перекатиполе*/
 
-    // Операции сравнения и логические операции
-    let a = 5;
-    console.log( a < 8); // true
-    console.log(a < 5); // false
-    console.log(a < 2); // false
-    let b = 'book';
-    let c = 'notepad';
-    console.log(b < c); // true
-    console.log(c < b); // false
-    a = 5;
-    console.log(a > 8); // false
-    console.log(a > 5); // false
-    console.log(a > 2); // true
-    a = 5;
-    console.log(a <= 8); // true
-    console.log(a <= 5); // true
-    console.log(a <= 2); // false
-    a = 5;
-    console.log(a >= 8); // false
-    console.log(a >= 5); // true
-    console.log(a >= 2); // true
-    a = 5;
-    console.log(a == 5); // true
-    console.log(a == 8); // false
-    console.log(a == '5') // true
-    a = 5;
-    console.log(a != 8); // true
-    console.log(a != 5); // false
-    console.log(a != '5'); // false
-    a = 5;
-    console.log(a === 5); // true
-    console.log(a === 8); // false
-    console.log(a === '5'); // false
-    a = 5;
-    console.log(a !== 8); // true
-    console.log(a !== 5); // false
-    console.log(a !== '5'); // true
+      // Операции сравнения и логические операции
+      /*let a = 5;
+      console.log(a < 8); // true
+      console.log(a < 5); // false
+      console.log(a < 2); // false
+      let b = 'book';
+      let c = 'notepad';
+      console.log(b < c); // true
+      console.log(c < b); // false
+      a = 5;
+      console.log(a > 8); // false
+      console.log(a > 5); // false
+      console.log(a > 2); // true
+      a = 5;
+      console.log(a <= 8); // true
+      console.log(a <= 5); // true
+      console.log(a <= 2); // false
+      a = 5;
+      console.log(a >= 8); // false
+      console.log(a >= 5); // true
+      console.log(a >= 2); // true
+      a = 5;
+      console.log(a == 5); // true
+      console.log(a == 8); // false
+      console.log(a == '5') // true
+      a = 5;
+      console.log(a != 8); // true
+      console.log(a != 5); // false
+      console.log(a != '5'); // false
+      a = 5;
+      console.log(a === 5); // true
+      console.log(a === 8); // false
+      console.log(a === '5'); // false
+      a = 5;
+      console.log(a !== 8); // true
+      console.log(a !== 5); // false
+      console.log(a !== '5'); // true*/
+
+      // Логические операции
+
+      /*let name = 'Alex';
+      let age = 25;
+      console.log((name == 'Sergey') && (age > 18)); // false
+      console.log((name == 'Alex') && (age > 50)); // false
+      console.log((name == 'Sergey') && (age > 50)); // false
+      console.log((name == 'Alex') && (age > 18)); // true
+      let molod = (age < 18);
+      console.log(molod); // false
+      console.log((name == 'Alex') && molod); // false
+
+      let distance = 2000;
+      let summa = 700;
+      console.log((distance < 1000) || (summa > 500)); // true
+      console.log((distance < 3000) || (summa > 500)); // true
+      console.log((distance < 1000) || (summa > 1000)); // false
+      console.log((distance < 3000) || (summa > 1000)); // true
+      let blizko = (distance < 2500); //true
+      console.log((summa > 1000) || blizko); // true
+
+      let temperature = 35;
+      let zharko = (temperature > 30); // true
+      console.log(zharko); // true
+      console.log(!zharko); // false*/
+
+      // Преобразование типов
+
+      /*  console.log(parseInt('5')); // 5
+        console.log(parseInt('22kg')); // 22
+        console.log(parseInt('2m50cm')); // 2
+        console.log(parseInt('-3.8')); // -3
+        console.log(parseInt('A2')); // NaN
+        console.log(parseInt('')); // NaN
+
+        console.log(parseFloat('5')); // 5
+        console.log(parseFloat('22kg')); // 22
+        console.log(parseFloat('2m50cm')); // 2
+        console.log(parseFloat('-3.8')); // -3.8
+        console.log(parseFloat('A2')); // NaN
+        console.log(parseFloat('')); // NaN
+
+        console.log(Number('5')); // 5
+        console.log(Number('22kg')); // NaN
+        console.log(Number('2m50cm')); // NaN
+        console.log(Number('-3.8')); // -3.8
+        console.log(Number('A2')); // NaN
+        console.log(Number('')); // 0*/
+
+      // Оператор if(условный оператор)
+
+      /*let money = 5000;
+
+      if(money < 7000) {
+          alert('денег нет!');
+          alert('но вы держитесь!');
+      } else {
+          alert('денег девать некуда!');
+      }*/
+
+      // Синтаксис операторов ввода и вывода
+      /*alert('x + 5');
+      console.log('x + 5');
+      prompt('How are things?', 'write here'); // yes = true; No = null
+      let name = prompt('What is your name?', 'name');
+      console.log(name);
+      let ShowDog = confirm('Показать условия договора?'); // yes = true; No = false
+      console.log(ShowDog);*/
+
+      // isNaN      and     isFinite
+
+      /*let Speed = parseFloat('55s'); // 55
+      console.log(Speed); // 55
+      console.log(isNaN(Speed)); // false
+      Speed = parseFloat('sss'); // NaN
+      console.log(Speed); // NaN
+      console.log(isNaN(Speed)); // true
+      console.log(isNaN('55')); // false
+      console.log(isNaN('55M')); // true
+      console.log(isNaN('')); // false*/
+
+      /* let Speed = parseFloat('sss'); // NaN
+       console.log(Speed); // NaN
+       console.log(isFinite(Speed)); // false
+       console.log(isFinite(5 / 0)); // false
+       console.log(isFinite(-5 / 0)); // false
+       console.log(isFinite(7)); // true
+       console.log(isFinite('7')); // true
+       console.log(isFinite('7m')); // false
+       console.log(isFinite('')); // true*/
+
+      // Оператор Switch
+
+      /*let side = 2;
+      switch (side) {
+          case 1:
+              alert('top side');
+              break;
+          case 2:
+              alert('right side');
+              break;
+          case 3:
+              alert('down side');
+              break;
+          case 4:
+              alert('left side');
+              break;
+          default:
+              alert('unknown side!');
+      }*/
+
+      // Тернарный оператор
+
+    /*let age = 5;
+    let t = (age <= 2) ? 'baby' : 'child';
+    console.log(t); // child*/
+
+    // Получение типа typeof (a)
+    /*let age = 5;
+    console.log(typeof (age)); // number
+    age = null;
+    console.log(typeof (age)); // object*/
   </script>
 </body>
 </html>
