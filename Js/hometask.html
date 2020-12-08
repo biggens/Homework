@@ -9,33 +9,61 @@
       'use strict';
 
       // Anketa _if.html
-      let lastName = prompt('What is your lastname?', 'lastname');
+      /*let lastName = prompt('What is your lastname?', 'lastname');
       let name = prompt('What is your name?', 'name');
       let patroName = prompt('What is your patroname?', 'patroname');
       let age = prompt('How are you age?', 'age');
       let ageDays = Number(age * 365);
       let distanceFive = +age + 5;
       let gender = confirm('What is your gender male?');
+
+      let genderShow;
       if (gender == true) {
-          gender = 'man';
+          genderShow = 'man';
       } else {
-          gender = 'woman';
+          genderShow = 'woman';
       }
+
       let retired;
-      if (gender && (age >= 63)) {
+      if(gender && (age >= 63)) {
           retired = 'yes';
-      } else if(gender && (age >=58)) {
+      } else if(!gender && (age >= 58)) {
           retired = 'yes';
       } else {
           retired = 'no';
       }
 
+
       alert('Your FIO: ' + lastName + ' ' + name + ' ' + patroName + '\n' +
           'Your age years: ' + age + '\n' +
           'Your age days: ' + ageDays + '\n' +
           'Your will age through 5 year: ' + distanceFive + '\n' +
-          'Your gender :' + gender + '\n' +
-          'You retired :' + retired);
+          'Your gender :' + genderShow + '\n' +
+          'You retired :' + retired);*/
+
+
+
+      /* Задание с тернарным оператором ? */
+
+      let firstName = prompt('What is your firstName?', 'firstName');
+      let secondName = prompt('What is your secondName?', 'secondName');
+      let lastName = prompt('What is your lastName?', 'lastName');
+      let fullName = firstName + ' ' + secondName + ' ' + lastName
+      let ageYear = prompt('How are you ageYear?', 'ageYear');
+      let ageDays = ageYear * 365;
+      let ageDistance = +ageYear + 5;
+      let gender = confirm('Are you male?');
+
+      let genderShow = (gender) ? 'man' : 'woman';
+
+      let retired = (gender && (ageYear >= 63)) ? 'yes' : (!gender && (ageYear >= 57)) ? 'yes' : 'no';
+
+      alert('Your FIO: ' + fullName + '\n' +
+          'Your age in Year: ' + ageYear + '\n' +
+          'Your age in Days: ' + ageDays + '\n' +
+          'You will age through 5 years: ' + ageDistance + '\n' +
+          'Your gender is - ' + genderShow + '\n' +
+          'You on retired: ' + retired);
 
   </script>
 </body>
