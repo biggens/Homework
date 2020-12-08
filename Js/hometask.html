@@ -22,7 +22,9 @@
           gender = 'woman';
       }
       let retired;
-      if (age > 60) {
+      if (gender && (age >= 63)) {
+          retired = 'yes';
+      } else if(gender && (age >=58)) {
           retired = 'yes';
       } else {
           retired = 'no';
