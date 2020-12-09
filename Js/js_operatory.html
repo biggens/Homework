@@ -208,15 +208,100 @@
 
       // Тернарный оператор
 
-    /*let age = 5;
-    let t = (age <= 2) ? 'baby' : 'child';
-    console.log(t); // child*/
+      /*let age = 5;
+      let t = (age <= 2) ? 'baby' : 'child';
+      console.log(t); // child*/
 
-    // Получение типа typeof (a)
-    /*let age = 5;
-    console.log(typeof (age)); // number
-    age = null;
-    console.log(typeof (age)); // object*/
+      // Получение типа typeof (a)
+      /*let age = 5;
+      console.log(typeof (age)); // number
+      age = null;
+      console.log(typeof (age)); // object*/
+
+      // Цикл while
+      /*let Age = 1;
+      while (Age < 30) {
+          console.log('Мне ' + Age + ' лет');
+          Age++;
+      }
+      console.log('Все, я большой!');*/
+
+      // Цикл do-while
+      /*let Age = 1;
+      do {
+          console.log('Мне ' + Age + ' лет');
+          Age++;
+      } while (Age < 30);
+      console.log('Все, я большой!');*/
+
+      //Цикл for
+      /*let Age = 1;
+      for (Age; Age < 30; Age++) {
+          console.log('Мне ' + Age + ' лет');
+      }
+        console.log('Все, я большой!');*/
+
+      //Функция
+      /*function GetYearDays(Year) {
+          if (Year % 4 == 0)
+              return 366;
+          else
+              return 365;
+      }
+      console.log('В 2013 году дней: ' + GetYearDays(2013));
+      console.log('В 2012 году дней: ' + GetYearDays(2012));*/
+
+      // Область видимости переменных
+      /* let A = 3;
+       let G = 100;
+
+       function F(M) {
+           let A = 5;
+           let B = 10;
+
+           console.log('Функция F видит парамет функции M = ' + M);
+           console.log('Функция F видит переменную A функции F = ' + A);
+           console.log('Функция F видит переменную B функции F = ' + B);
+           console.log('Функция F видит переменную G из глобальной области = ' + G);
+       }
+       F(51);
+       console.log('Основной код видит переменную А из глобальной области = ' + A);
+       console.log('Основной код видит переменную G из глобальной области = ' + G);*/
+
+      // Массивы
+      /*let weekdays = ['понедельник',
+                      'фторник',
+                      'среда',
+                      'четверг',
+                      'пятница',
+                      'суббота',
+                      'воскресенье'];
+      console.log(weekdays.length); // 7
+      console.log(weekdays[1]); // фторник
+      weekdays[1] = 'вторник';
+      console.log(weekdays[1]); // вторник*/
+
+      // Хэши (ассоциативные массивы)
+     /* let friend = {name: 'Владимир', age: 25};
+      console.log(friend);
+      console.log(friend.age); // 25
+      console.log(friend.name); // Владимир
+      console.log('age' in friend); // true
+      console.log('gender' in friend); // false
+      console.log(friend.gender); // несуществующий элемент UNDEFINED
+      friend.gender = 'M';
+      console.log(friend); // весь Хэш
+      console.log(friend.gender); // M
+      console.log('gender' in friend); // true
+      for (let K in friend)
+          console.log(K); // name, age, gender
+      for (let K in friend)
+          console.log(K + ' / ' + friend[K]);
+      delete friend.age;
+      for (let K in friend)
+          console.log(K + ' / ' + friend[K]);*/
+    
+
   </script>
 </body>
 </html>
