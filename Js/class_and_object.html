@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> class_object </title>
+</head>
+<body>
+  <script>
+      'use strict';
+
+      // Предсозданный объект Math
+      console.log(Math.PI); // 3.141592653589793
+
+      console.log(Math.abs(-5.3)); // 5.3
+      console.log(Math.abs(7.2)); // 7.2
+
+      let a = 5;
+      let b = 7;
+      console.log(Math.max(a, b)); // 7
+
+      let c = 5;
+      console.log(Math.min(a, 2, 8)); // 2
+
+      console.log(Math.round(4.7)); // 5
+      console.log(Math.round(2.2)); // 4
+      console.log(Math.round(4)); //4
+
+      console.log(Math.ceil(4.7)); // 5
+      console.log(Math.ceil(4.2)); // 5
+      console.log(Math.ceil(-3.2)); // -3
+      console.log(Math.ceil(4)); // 4
+
+      console.log(Math.floor(4.7)); // 4
+      console.log(Math.floor(4.2)); // 4
+      console.log(Math.floor(-3.2)); // -4
+      console.log(Math.floor(4)); // 4
+
+      console.log(Math.sqrt(9)); // 3
+      console.log(Math.sqrt(5)); // 2.23606797749979
+
+      console.log(Math.random()); // 0.7747658523612051
+      console.log(Math.random()); // 0.6251152019602033
+      console.log(Math.random()); // 0.3013248645930957
+
+      console.log(Math.sin(1)); // 0.8414709848078965
+      console.log(Math.sin(Math.PI / 2)); // 1
+
+      console.log(Math.cos(1)); // 0.5403023058681398
+      console.log(Math.cos(Math.PI / 2)); // 6.123233995736766e-17
+
+      console.log(Math.tan(1)); // 1.5574077246549023
+      console.log(Math.tan(Math.PI / 2)); // 16331230353195370
+
+      // Math.round(N/M) * M
+
+      function RoundMod(N, M) {
+          return Math.round(N / M) * M;
+      }
+
+      console.log(RoundMod(15.2, 10)); // 20
+      console.log(RoundMod(14.8, 10)); // 10
+      console.log(RoundMod(55.55555, 0.01)); // 55.56
+
+      // Math.floor(Math.random() * (M-N+1)) + N
+
+      function RandomDiap(N, M) {
+          return Math.floor(
+              Math.random() * (M - N + 1)
+          ) + N;
+      }
+
+      console.log(RandomDiap(1, 10)); // 2
+      console.log(RandomDiap(1, 10)); // 3
+
+      /*
+      Свойство объекта Math
+      PI
+
+      Методы объекта Math
+      max
+      min
+      round
+      ceil
+      floor
+      sqrt
+      random
+      cos
+      sin
+      tan
+      */
+
+  </script>
+</body>
+</html>
