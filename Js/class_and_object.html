@@ -9,7 +9,7 @@
   <script>
       'use strict';
 
-      // Предсозданный объект Math
+      /*// Предсозданный объект Math
       console.log(Math.PI); // 3.141592653589793
 
       console.log(Math.abs(-5.3)); // 5.3
@@ -71,7 +71,7 @@
       }
 
       console.log(RandomDiap(1, 10)); // 2
-      console.log(RandomDiap(1, 10)); // 3
+      console.log(RandomDiap(1, 10)); // 3*/
 
       /*
       Свойство объекта Math
@@ -89,6 +89,89 @@
       sin
       tan
       */
+
+      // let admin;
+      // let name;
+      // name = 'Jhon';
+      // admin = name;
+      // alert(admin);
+      //
+      // let world;
+      // let user;
+
+
+      /*let name = 'Ivan';
+      console.log(`Hello, ${name}!`);
+      console.log(`result: ${1 + 2}`);*/
+
+      /*
+      number
+     bigint в конце n
+      числа и infinate, NaN
+      string
+      boolean true/false
+      symbol id
+
+      null и undefined отдельный тип
+
+      object
+       */
+/*
+      let name = 'ilya';
+      alert(`hello ${1}`); // hello 1
+      alert(`hello ${"name"}`); // hello "name"
+      alert(`hello ${name}`); // hello ilya*/
+
+// Предописанный класс String
+ /* let S = 'Утром деньги, вечером стулья!';
+  console.log(S.length); // 29 символов
+    console.log(S.charAt(2)); // р
+    console.log(S[2]); // р
+    console.log(S.substr(14)); // вечером стулья!
+    console.log(S.substr(14, 7)); // вечером
+    console.log(S.slice(14)); // вечером стулья!
+    console.log(S.slice(14, 23)); // вечером с
+    console.log(S.split(' ')); // ['Утром', 'деньги', 'вечером', 'стулья!']
+    let S2 = 'Бендер';
+    console.log(S2.split('')); // ['Б', 'e', 'н', 'д', 'e', 'p']
+    console.log(S.toLowerCase()); // утром деньги, вечером стулья!
+    console.log(S.toUpperCase()); // УТРОМ ДЕНИГИ, ВЕЧЕРОМ СТУЛЬЯ!
+    console.log(S.indexOf('о')); // 3
+    console.log(S.indexOf('о', 4)); // 19
+    console.log(S.indexOf('о', 20)); // -1
+    console.log(S.lastIndexOf('о')); // 19
+    console.log(S.lastIndexOf('о', 18)); // 3
+    console.log(S.lastIndexOf('о', 2)); // -1
+    console.log(S.replace('ром', 'RO')); // УтRO деньги, вечером стулья!
+    S = ' \n\r\t\v hello \n\r\t\v ';
+    console.log(S);
+    console.log('*' + S.trim() + '*'); //*/
+
+    /*
+    свойство length
+    методы:
+    charAt(индекс); выводит символ
+    индекс; переменная. точечная нотация индекс
+    substr(начало, длина); выводит подстроку от начального индекса и до конечного
+    slice(начало, конец); выводит подстроку с начального индекса и на длину второго индекса
+    split(); (''), если строка разделяетс по словам, если одно слово разделяет по буквам
+    toLowerCase(); всю строку приводит к нижнего регистру
+    toUpperCase(); всю троку приводит к верхнему регистру
+    indexOf(символ); исщет в подстроке символ и выводит его индекс
+    indexOf(символ, индекс); начинает искать с определенного индекса
+    lastIndexOf(символ); исщет с конца подстроки
+    lastIndexOf(символ, индекс); исщет с конца подстроки и только с номера индекса
+    replace(старая, новая); заменяет старую строку на новую
+    trim(); убирает все табуляции и пробелы вокруг переменном
+     */
+
+    let R = 'Изучаем JAVASCRIPT, забываем JAVA!';
+    console.log(R);
+    console.log(R.split(''));
+    console.log(R.split(' '));
+    console.log(R.split('JAVA'));
+    console.log(R.split('JAVA').join('Java'));
+    console.log(R.split('JAVA').join('Java').split('SCRIPT').join('Script'));
 
   </script>
 </body>
